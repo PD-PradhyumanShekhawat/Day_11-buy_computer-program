@@ -1,0 +1,8 @@
+available_parts = [
+  'computer',
+  'mouse',
+  'keyboard',
+  'hdmi cable',
+  'dvd drive',
+  
+]
