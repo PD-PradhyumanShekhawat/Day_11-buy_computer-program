@@ -1,11 +1,12 @@
-available_parts = [
+available_parts = {
   'computer',
+  'monitor',
   'mouse',
   'keyboard',
   'hdmi cable',
   'dvd drive',
-  
-]
+  'mousepad' 
+}
 
 chosen_part = None
 while current_choice != "0":
@@ -15,6 +16,9 @@ while current_choice != "0":
   
   else:
     print("Please add an item from the list: ")
-    print(available_parts)
-
+    for key, values in available_parts.items():
+      print(f"{key}: {values}")
+    
+    print("0: to finish")
+  
   chosen_part = input(" > ")
