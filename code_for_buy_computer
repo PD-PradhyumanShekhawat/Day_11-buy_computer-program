@@ -6,3 +6,15 @@ available_parts = [
   'dvd drive',
   
 ]
+
+chosen_part = None
+while current_choice != "0":
+  if current_choice in available_parts:
+    chosen_part = available_parts[current_choice]
+    print(f"Adding{chosen_part}")
+  
+  else:
+    print("Please add an item from the list: ")
+    print(available_parts)
+
+  chosen_part = input(" > ")
